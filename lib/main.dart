@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:bmi_calculator/card.dart';
 import 'package:bmi_calculator/cardtile.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'roundbtn.dart';
@@ -16,6 +17,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         appBarTheme: AppBarTheme(color: appbarcolor),
         primaryColor: Color(0xff27374D),
